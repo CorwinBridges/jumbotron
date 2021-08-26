@@ -72,20 +72,20 @@ body {
 }
 
 div.test1 {
-  animation: showup 7s linear 0s 1 normal forwards;
+  animation: showup 7s 1 forwards;
 }
 
 div.test2 {
   width: 0px;
-  animation: reveal 7s linear 0s 1 normal forwards;
+  animation: reveal 7s 1 forwards;
 }
 
 div.test2 span {
-  margin-left: -355px;
-  animation: slidein 10s linear 0s 1 normal forwards;
+  margin-left: -55px;
+  animation: slidein 7s 1 forwards;
 }
 
-@keyframes showup {
+/* @keyframes showup {
   0% {
     opacity: 0;
   }
@@ -107,8 +107,8 @@ div.test2 span {
   20% {
     margin-left: -800px;
   }
-  35% {
-    margin-left: 0px;
+  30% {
+    margin-left: -800px;
   }
   100% {
     margin-left: 0px;
@@ -118,11 +118,11 @@ div.test2 span {
 @keyframes reveal {
   0% {
     opacity: 0;
-    width: fit-content;
+    width: 0px;
   }
   20% {
     opacity: 1;
-    width: fit-content;
+    width: 0px;
   }
   30% {
     width: fit-content;
