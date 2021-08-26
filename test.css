@@ -1,0 +1,70 @@
+div {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div.test1 {
+  animation: showup 7s linear 0s 1 normal forwards;
+}
+
+div.test2 {
+  width: 0px;
+  animation: reveal 7s linear 0s 1 normal forwards;
+}
+
+div.test2 span {
+  margin-left: -355px;
+  animation: slidein 7s linear 0s 1 normal forwards;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    width: 355px;
+  }
+}
