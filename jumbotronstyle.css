@@ -34,14 +34,16 @@ h1 {
   position: relative;
   top: 100%;
   left: 50%;
+  width:fit-content;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  background-color: #2adba7;
+  padding: 10px;
+  border-radius: 20px;
 }
-h1,
 h2,
 p {
   background-color: #2adba7;
-  /* color: #2a51db; */
   padding: 10px;
   border-radius: 20px;
   width: fit-content;
@@ -50,7 +52,6 @@ p,
 h2 {
   position: relative;
   top: 100px;
-  animation: pulsate 2.5s infinite alternate;
   color: white;
 }
 body {
@@ -61,10 +62,13 @@ body {
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #2adba7,
     0 0 82px #2adba7, 0 0 92px #2adba7, 0 0 102px #2adba7, 0 0 151px #2adba7;
 }
-div {
+.test1,
+.test2 {
   display: inline-block;
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
+  padding: 152px;
+  margin: -152px;
 }
 
 div.test1 {
@@ -78,7 +82,7 @@ div.test2 {
 
 div.test2 span {
   margin-left: -355px;
-  animation: slidein 7s linear 0s 1 normal forwards;
+  animation: slidein 10s linear 0s 1 normal forwards;
 }
 
 @keyframes showup {
@@ -114,20 +118,20 @@ div.test2 span {
 @keyframes reveal {
   0% {
     opacity: 0;
-    width: 0px;
+    width: fit-content;
   }
   20% {
     opacity: 1;
-    width: 0px;
+    width: fit-content;
   }
   30% {
-    width: 355px;
+    width: fit-content;
   }
   80% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    width: 355px;
+    width: fit-content;
   }
 }
