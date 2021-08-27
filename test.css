@@ -2,6 +2,8 @@ div {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
+  padding: 152px;
+  margin: -152px;
 }
 
 div.test1 {
@@ -9,13 +11,11 @@ div.test1 {
 }
 
 div.test2 {
-  width: 0px;
-  animation: reveal 7s linear 0s 1 normal forwards;
+  animation: reveal 20s linear 0s 1 normal forwards;
 }
 
 div.test2 span {
-  margin-left: -355px;
-  animation: slidein 7s linear 0s 1 normal forwards;
+  animation: slidein 20s linear 0s 1 normal forwards;
 }
 
 @keyframes showup {
@@ -52,19 +52,29 @@ div.test2 span {
   0% {
     opacity: 0;
     width: 0px;
+    margin-left: 0;
+    padding-left: 0px;
   }
   20% {
     opacity: 1;
     width: 0px;
+    margin-left: 0;
+    padding-left: 0px;
   }
   30% {
     width: 355px;
+    margin-left: 0;
+    padding-left: 0px;
   }
   80% {
     opacity: 1;
+    margin-left: 0;
+    padding-left: 0px;
   }
   100% {
     opacity: 1;
     width: 355px;
+    margin-left: 0;
+    padding-left: 0;
   }
 }
