@@ -78,33 +78,36 @@ body {
   margin: -152px;
 }
 h2.left {
-  animation: slideleft 14.5s;
+  animation: slideleft 16.5s;
 }
-h2.appear {
-  animation: appear 17s;
+h2 > div.appear {
+  animation: appear 13s;
 }
 p > span.appear {
-  animation: appear 17s;
+  animation: appear 18s;
+}
+.container-fluid > div.appear {
+  animation: appear 3s;
 }
 p.left {
-  animation: slideleft 22s;
+  animation: slideleft 23.5s;
 }
 h2.right {
-  animation: slideright 14.5s;
+  animation: slideright 16.5s;
 }
 p.right {
-  animation: slideright 22s;
+  animation: slideright 23.5s;
 }
 div.test1 {
-  animation: showup 7s;
+  animation: showup 7.5s;
 }
 
 div.test2 {
-  animation: reveal 8s;
+  animation: reveal 10.5s;
 }
 
 div.test2 span {
-  animation: slidein 8s;
+  animation: slidein 10.5s;
 }
 
 @keyframes showup {
@@ -178,28 +181,28 @@ div.test2 span {
 }
 @keyframes slideleft {
   0% {
-      transform: translateX(-3000px);
+    transform: translateX(-3000px);
   }
 
   20% {
-      transform: translateX(-3000px);
+    transform: translateX(-3000px);
   }
   30% {
     transform: translateX(0);
   }
   100% {
-      transform: translate(0);
+    transform: translate(0);
   }
 }
 @keyframes appear {
   0% {
     opacity: 0;
   }
-  20% {
+  38% {
     opacity: 0;
   }
-  80% {
-    opacity: 0;
+  50% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
