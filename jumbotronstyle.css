@@ -56,9 +56,7 @@ p {
   width: 100%;
 }
 h2 {
-  width: 100%;
-  position: relative;
-  left: 25%;
+  width: fit-content;
 }
 .col {
   text-align: center;
@@ -80,27 +78,33 @@ body {
   margin: -152px;
 }
 h2.left {
-  animation: slideleft 14.5s 1 forwards;
+  animation: slideleft 14.5s;
+}
+h2.appear {
+  animation: appear 17s;
+}
+p > span.appear {
+  animation: appear 17s;
 }
 p.left {
-  animation: slideleft 22s 1 forwards;
+  animation: slideleft 22s;
 }
 h2.right {
-  animation: slideleft 14.5s 1 forwards;
+  animation: slideright 14.5s;
 }
 p.right {
-  animation: slideleft 22s 1 forwards;
+  animation: slideright 22s;
 }
 div.test1 {
-  animation: showup 7s 1 forwards;
+  animation: showup 7s;
 }
 
 div.test2 {
-  animation: reveal 8s 1 forwards;
+  animation: reveal 8s;
 }
 
 div.test2 span {
-  animation: slidein 8s 1 forwards;
+  animation: slidein 8s;
 }
 
 @keyframes showup {
@@ -157,17 +161,47 @@ div.test2 span {
     width: fit-content;
   }
 }
-@keyframes slideleft {
+@keyframes slideright {
   0% {
-    margin-left: -3000px;
+    transform: translateX(3000px);
   }
+
   20% {
-    margin-left: -3000px;
+    transform: translateX(3000px);
   }
   30% {
-    margin-left: 0px;
+    transform: translateX(0);
   }
   100% {
-    margin-left: 0px;
+    transform: translate(0);
+  }
+}
+@keyframes slideleft {
+  0% {
+      transform: translateX(-3000px);
+  }
+
+  20% {
+      transform: translateX(-3000px);
+  }
+  30% {
+    transform: translateX(0);
+  }
+  100% {
+      transform: translate(0);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
