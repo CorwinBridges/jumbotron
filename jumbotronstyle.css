@@ -1,5 +1,5 @@
 .jumbotron {
-  background-color: black;
+  background-color: #2adba7;
   background-image: url(img/amogus.png);
   z-index: 1;
   background-repeat: no-repeat;
@@ -77,39 +77,36 @@ body {
   padding: 152px;
   margin: -152px;
 }
-h2.left {
-  animation: slideleft 16.5s;
-}
-h2 > div.appear {
-  animation: appear 13s;
-}
-p > span.appear {
-  animation: appear 18s;
-}
-.container-fluid > div.appear {
+.jumbotron.appear {
   animation: appear 3s;
-}
-p.left {
-  animation: slideleft 23.5s;
-}
-h2.right {
-  animation: slideright 16.5s;
-}
-p.right {
-  animation: slideright 23.5s;
 }
 div.test1 {
   animation: showup 7.5s;
 }
-
 div.test2 {
   animation: reveal 10.5s;
 }
-
 div.test2 span {
   animation: slidein 10.5s;
 }
-
+h2.left {
+  animation: slideleft 16.5s;
+}
+h2.right {
+  animation: slideright 16.5s;
+}
+h2 > div.appear {
+  animation: appear 13s;
+}
+p.left {
+  animation: slideleft 23.5s;
+}
+p.right {
+  animation: slideright 23.5s;
+}
+p > span.appear {
+  animation: appear 18s;
+}
 @keyframes showup {
   0% {
     opacity: 0;
@@ -124,7 +121,6 @@ div.test2 span {
     opacity: 1;
   }
 }
-
 @keyframes slidein {
   0% {
     margin-left: -800px;
@@ -139,7 +135,6 @@ div.test2 span {
     margin-left: 0px;
   }
 }
-
 @keyframes reveal {
   0% {
     opacity: 0;
@@ -168,7 +163,6 @@ div.test2 span {
   0% {
     transform: translateX(3000px);
   }
-
   20% {
     transform: translateX(3000px);
   }
