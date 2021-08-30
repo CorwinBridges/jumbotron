@@ -64,7 +64,8 @@ h2 {
 body {
   background-color: #2adba7;
 }
-.neonText {
+.neonText,
+.neonText:hover {
   color: #fff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #2adba7,
     0 0 82px #2adba7, 0 0 92px #2adba7, 0 0 102px #2adba7, 0 0 151px #2adba7;
@@ -106,6 +107,15 @@ p.right {
 }
 p > span.appear {
   animation: appear 18s;
+}
+.revision {
+  animation: appear 20s;
+}
+.home {
+  animation: appear 12s;
+}
+.container.appear {
+  animation: appear 9.5s;
 }
 @keyframes showup {
   0% {
@@ -201,4 +211,10 @@ p > span.appear {
   100% {
     opacity: 1;
   }
+}
+button.buttoncolor {
+  background-color: #2adba7 !important;
+}
+button:hover {
+  filter: brightness(0.9);
 }
