@@ -62,7 +62,7 @@ h2 {
   text-align: center;
 }
 body {
-  background-color: #2adba7;
+  background-color: #26b2bf;
 }
 .neonText,
 .neonText:hover {
@@ -107,9 +107,6 @@ p.right {
 }
 p > span.appear {
   animation: appear 18s;
-}
-.revision {
-  animation: appear 20s;
 }
 .home {
   animation: appear 12s;
@@ -217,4 +214,27 @@ button.buttoncolor {
 }
 button:hover {
   filter: brightness(0.9);
+}
+.revision {
+  width: 100%;
+}
+.revision1 {
+  width: 100%;
+}
+footer {
+  padding: 15px;
+  z-index: 999;
+  position: relative;
+}
+
+.col-md-6 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding-left: 15px;
+}
+.col-md-6:hover .img-top {
+  display: inline;
 }
