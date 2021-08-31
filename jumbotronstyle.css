@@ -114,6 +114,9 @@ p > span.appear {
 .container.appear {
   animation: appear 9.5s;
 }
+.xyz {
+  animation: appear 20s;
+}
 @keyframes showup {
   0% {
     opacity: 0;
@@ -184,7 +187,6 @@ p > span.appear {
   0% {
     transform: translateX(-3000px);
   }
-
   20% {
     transform: translateX(-3000px);
   }
@@ -227,7 +229,6 @@ footer {
   z-index: 999;
   position: relative;
 }
-
 .col-xl-6 .img-top {
   display: none;
   position: absolute;
