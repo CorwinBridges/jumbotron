@@ -219,7 +219,8 @@ button:hover {
   width: 100%;
 }
 .revision1 {
-  width: 100%;
+  width: 33.75em;
+  height: 45em;
 }
 footer {
   padding: 15px;
@@ -227,14 +228,14 @@ footer {
   position: relative;
 }
 
-.col-md-6 .img-top {
+.col-xl-6 .img-top {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 99;
-  padding-left: 15px;
+  margin-left: 15px;
 }
-.col-md-6:hover .img-top {
+.col-xl-6:hover .img-top {
   display: inline;
 }
