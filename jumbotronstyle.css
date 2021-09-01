@@ -240,3 +240,6 @@ footer {
 .col-xl-6:hover .img-top {
   display: inline;
 }
+.navbar {
+  z-index: 1;
+}
